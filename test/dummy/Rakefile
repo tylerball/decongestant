@@ -1,0 +1,10 @@
+require_relative 'config/application'
+
+Rails.application.load_tasks
+
+require 'decongestant'
+
+Decongestant::Task.new do |t|
+  t.output = './tmp'
+  t.assets = %w(application.css)
+end
