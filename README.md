@@ -1,6 +1,8 @@
 # decongestant
 Compile assets from sprockets to files easily.
 
+In your Rakefile:
+
 ```ruby
 require 'decongestant'
 
@@ -8,6 +10,12 @@ Decongestant::Task.new do |t|
   t.output = './tmp'
   t.assets = %w(application.css)
 end
+```
+
+then:
+
+```sh
+$ bin/rake decongestant:compile
 ```
 
 Tada!
