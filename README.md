@@ -1,4 +1,5 @@
-# decongestant
+# decongestant ![build](https://travis-ci.org/tylerball/decongestant.svg?branch=master)
+
 Compile assets from sprockets to files easily.
 
 In your Rakefile:
